@@ -1,0 +1,13 @@
+\frametitle{Help with Literature}
+  \begin{itemize}
+      \item \url{https://scholar.google.com}
+      \item \url{https://semanticscholar.org}
+	  \item \url{https://dblp.uni-trier.de}
+      \item \url{https://arxiv.org}
+      \item Get around paywalls using
+          \url{https://login.eaccess.ub.tum.de/login} or bookmarklet:
+          \begin{lstlisting}
+javascript:void(location.href='https://eaccess.ub.tum.de/login?url='+location.href)
+          \end{lstlisting}
+      \item Researchers' homepages can be \alert{valuable}! (source code, raw data, instructions, technical information, ...)
+  \end{itemize}

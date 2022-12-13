@@ -1,0 +1,78 @@
+\RequirePackage{listings}
+%\RequirePackage{DejaVuSansMono}
+
+% THEME
+% =========================================================
+%\usetheme{Boadilla}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{normal text}{fg=white,bg=black!90}
+\setbeamercolor{structure}{fg=white}
+\setbeamercolor{item projected}{use=item,fg=white,bg=item.fg!35}
+\setbeamercolor*{palette primary}{use=structure,fg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=structure.fg!95!black,bg=black!80}
+\setbeamercolor*{framesubtitle}{fg=white}
+\setbeamercolor*{block title}{parent=structure,bg=black!60}
+\setbeamercolor*{block body}{fg=black,bg=black!10}
+\setbeamercolor*{block title alerted}{parent=alerted text,bg=black!15}
+\setbeamercolor*{block title example}{parent=example text,bg=black!15}
+%\useinnertheme[shadow]{rounded}
+% =========================================================
+
+% DEFINE COLORS
+% =========================================================
+\definecolor{darkred}{RGB}{223,63,00}
+\definecolor{brightred}{RGB}{255,127,00}
+% =========================================================
+
+% Templates
+% =========================================================
+%\setbeamertemplate{itemize subitem}[triangle]
+% =========================================================
+
+% SET COLORS
+% =========================================================
+\setbeamercolor{normal text}{fg=white,bg=black!90}
+\setbeamercolor{structure}{fg=white}
+\setbeamercolor{item projected}{use=item,fg=white,bg=item.fg!35}
+\setbeamercolor*{palette primary}{use=structure,fg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=structure.fg!95!black,bg=black!80}
+\setbeamercolor*{framesubtitle}{fg=white}
+\setbeamercolor*{block title}{parent=structure,bg=black!60}
+\setbeamercolor*{block body}{fg=black,bg=black!10}
+\setbeamercolor*{block title alerted}{parent=alerted text,bg=black!15}
+\setbeamercolor*{block title example}{parent=example text,bg=black!15}
+% =========================================================
+
+% FONTS
+% =========================================================
+\setbeamerfont{alerted text}{series=\bfseries}
+% =========================================================
+
+% LISTINGS SETUP
+% =========================================================
+\lstset{ %
+         %basicstyle=\footnotesize\ttfamily, % Standardschrift
+         numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         %stepnumber=2,               % Abstand zwischen den Zeilennummern
+         numbersep=2pt,              % Abstand der Nummern zum Text
+         tabsize=4,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=10pt,
+         framexleftmargin=10pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         showstringspaces=false,
+         language=Java      
+ }
+ \lstloadlanguages{
+         C
+ }
+

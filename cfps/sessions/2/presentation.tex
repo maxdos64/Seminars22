@@ -1,0 +1,164 @@
+\documentclass{i20lecture}
+
+\subtitle{Session 2}
+\usepackage{amssymb}
+
+\newcommand{\done}{\makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{0.1em}$\checkmark$}}
+\begin{document}
+
+\frame{\titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Anmerkungen zu den Entwürfen}
+  \framesubtitle{Sprache}
+
+  \begin{itemize}
+    \item Der Gebrauch eines Kommas vor \emph{\textsc{which}} ist im Englischen nur
+    korrekt, wenn der eingeleitete Nebensatz \emph{optional} für den \emph{Sinn} des gesamten
+    Satzes ist.
+    \begin{itemize}
+      \item ``Principia Mathematica'' is one of the most complete works
+      (\emph{kein Komma}) which examines different ways to use logical inference
+      to obtain meaningful results.
+      \item Type-1 hypervisors\emph{,} which are also called bare-metal hypervisors\emph{,}
+      execute directly on the hardware without relying on any operating system.
+    \end{itemize}
+    
+    \item Die Verwendung von \emph{\textsc{that}} ist nur bei \emph{nicht-optionalen}
+    Nebensätzen zulässig $\Rightarrow$ Vor \emph{\textsc{that}} steht im Englischen
+    (fast) nie ein Komma.
+    \item Kurzformen wie \emph{\textsc{don't}}, \emph{\textsc{we'll}} und \emph{\textsc{kinda}} haben in einer Seminararbeit
+    nichts verloren.
+    \item Das Zeichen \texttt{-} ist ein Trenn- oder Bindestrich. Ein
+    Gedankenstrich wird in \LaTeX\ durch \texttt{-}\texttt{-} oder
+    \texttt{-}\texttt{-}\texttt{-}
+    produziert.
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Anmerkungen zu den Entwürfen}
+  \framesubtitle{Sprache}
+
+  \begin{itemize}
+    \item Übermäßiger Gebrauch \emph{parataktischer} Sätze ist zu vermeiden. Hier hilft es,
+    die Sätze nach dem ``Behauptung -- Begründung -- Beispiel''-Schema aufzubauen und
+    sinnvolle \emph{Konjunktionen} zu verwenden.
+    \begin{itemize}
+      \item The networking subsystems are often also only implemented partly.
+      There might be differences compared to a non-virtualized system. This can
+      be detected by malware.
+      \item Malware can exploit discrepancies between expected behavior of
+      networking hardware and an emulated environment. This is due to the fact
+      that contemporary hardware components are increasingly complex,
+      consequently imposing the burden of emulating all corner cases correctly
+      on implementors. For example, networking hardware emulated by Qemu version
+      2.6 lacks support of out-of-band management capabilities like Intel AMT.
+    \end{itemize}
+    \item Sätze, welche aus diesem Schema fallen und nurmehr \emph{Pauschalaussagen} darstellen
+    fallen im Allgemeinen weg.
+    \begin{itemize}
+      \item Several levels of intermediate representations and transformations
+      between those are common to deal with different aspects of reasoning about
+      the program.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Anmerkungen zu den Entwürfen}
+  \framesubtitle{Form}
+
+  \begin{itemize}
+    \item Vom Text \emph{nicht referenzierte} Abbildungen kommen \emph{nicht} vor.
+    
+    \item \emph{Quellenangaben} stehen am \emph{Ende} des Satzes kurz \emph{vor} dem Punkt, oder direkt
+    \emph{hinter} dem \emph{Namen} eines zitierten \emph{Programms}/\emph{Frameworks}.
+    
+    \item Die \emph{Einträge} im Quellenverzeichnis beinhalten einheitlich mindestens \emph{Autor}, \emph{Titel}, und
+    \emph{Jahr}. Abhängig von der Art der Quelle ist ein Link mit Abrufzeitpunkt oder die
+    Konferez / Journal vorhanden. Ist diese Information \emph{nicht} verfügbar, kann der
+    Verweis über eine \emph{Fußnote} erledigt werden.
+
+    \item Zwei \emph{aufeinanderfolgende} Sätze tragen \emph{niemals} die gleiche Referenz.
+
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Anmerkungen zu den Entwürfen}
+  \framesubtitle{Aufbau}
+
+  \begin{itemize}
+    \item Wissenschaftliche Arbeiten wirken etwas ``senil'' (weil repetitiv) im
+    Aufbau. Umgangssprachlich:
+    \begin{itemize}
+      \item Die \emph{Einleitung} spricht darüber, was man tun wird,
+      \item der \emph{Hauptteil} erklärt was man tut,
+      \item die \emph{Evaluation} versucht zu zeigen, dass das was man tut plausibel
+      ist und
+      \item der \emph{Schluss} spricht darüber was man getan hat.
+    \end{itemize}
+    
+    \item Generell \emph{leiten Abschnitte} ineinander \emph{über} und \emph{referenzieren} sich (in
+    moderatem Umfang) \emph{gegenseitig} innerhalb der Arbeit.
+    
+    \item Am \emph{Ende} der Einleitung befindet sich ein Absatz, der die \emph{kommenden Abschnitte}
+    der Arbeit sowie deren Aufbau \emph{zusammenfasst}.
+    
+    \item Unterüberschriften treten nur auf, wenn es auf \emph{gleicher Ebene} mindestens noch
+    \emph{eine weitere} Überschrift gibt.
+    
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Anmerkungen zu den Entwürfen}
+  \framesubtitle{Timeline}
+  
+  \begin{itemize}
+    \item Fällig \emph{2019-06-13}
+    \item Wer \emph{keinen} Entwurf vorlegt, nimmt \emph{nicht} am Review teil
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%  \frametitle{Review}
+%  \framesubtitle{Eckdaten}
+%
+%  \begin{itemize}
+%    \item Beurteilung von \emph{zwei} fremden Seminararbeiten
+%    \item Abgabe \emph{Mittwoch}, \emph{21.12.2016}, \emph{14:00 Uhr}
+%    \medskip
+%    \item Zwei Arbeiten \emph{r0.pdf}, \emph{r1.pdf} per git Repository (heute abend)
+%    \item Abgabe via git, Dateien \emph{r0-reviewed.pdf} und \emph{r1-reviewed.pdf}
+%    \item Maximal \emph{eine A4-Seite} pro Arbeit
+%    \item Sprache \emph{deutsch}
+%    \item Wer \emph{keinen} Entwurf vorlegt, nimmt \emph{nicht} am Review teil
+%  \end{itemize}
+%\end{frame}
+%
+%\begin{frame}
+%  \frametitle{Review}
+%  \framesubtitle{Kriterien für ein gutes Review}
+%  
+%  Ein gutes Review enthält (wenn zutreffend):
+%  \begin{itemize}
+%    \item Eine \emph{Zusammenfassung} der Arbeit aus Sicht des Reviewers
+%    \item Hinweise auf \emph{formale Fehler} (Einheitlichkeit Quellen, Lesbarkeit
+%    Grafiken, ...)
+%    \item Konkrete \emph{inhaltliche} Kritik (Probleme aufzeigen, Verbesserungsvorschläge)
+%    \item Anregungen für \emph{künftige} Arbeitsschritte
+%    \item Anmerkungen zu \emph{Orthographie} und \emph{Grammatik}
+%  \end{itemize}
+%  \medskip
+%  Vorsicht vor \emph{``Rekursion''}: Oftmals werden genau die Fehler kritisiert, die
+%  der Verfasser selbst gemacht hat.
+%\end{frame}
+
+\end{document}

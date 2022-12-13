@@ -1,0 +1,183 @@
+\documentclass{i20lecture}
+
+\subtitle{Session 1}
+\usepackage{amssymb}
+
+\newcommand{\done}{\makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{0.1em}$\checkmark$}}
+\begin{document}
+
+\frame{\titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Timeline}
+
+  \begin{center}
+    % \begin{tikzpicture}[scale=.75]
+    %   \path[|-|] (0, 0) edge node[pos=.5, fill=white] {\footnotesize Seminar \texttt{cfps21s}} (18, 0);
+    %   \path[|-|, shorten > = .5pt, shorten < = .0pt, ] ( 0.00, 0.75) edge node[pos=.5, fill=white] {\footnotesize \alert{I}}    ( 1, 0.75);
+    %   \path[|-|, shorten > = .5pt, shorten < = .5pt, ] ( 1.00, 0.75) edge node[pos=.5, fill=white] {\footnotesize \alert{II}}   ( 2, 0.75);
+    %   \path[|-|, shorten > = .5pt, shorten < = .5pt, ] ( 2.00, 0.75) edge node[pos=.5, fill=white] {\footnotesize \alert{III}}  (10, 0.75);
+    %   \path[|-|, shorten > = .5pt, shorten < = .5pt, ] (10.00, 0.75) edge node[pos=.5, fill=white] {\footnotesize \alert{IV}}   (11, 0.75);
+    %   \path[|-|, shorten > = .5pt, shorten < = .5pt, ] (11.00, 0.75) edge node[pos=.5, fill=white] {\footnotesize \alert{V}}    (16, 0.75);
+    %   \path[|-|, shorten > = .5pt, shorten < = .5pt, ] (16.00, 0.75) edge node[pos=.5, fill=white] {\footnotesize \alert{VI}}   (17, 0.75);
+    %   \path[|-|, shorten > = .0pt, shorten < = .5pt, ] (17.00, 0.75) edge node[pos=.5, fill=white] {\footnotesize \alert{VII}}  (18, 0.75);
+    % \end{tikzpicture}
+    % \vfill
+    \scalebox{.9}{
+    \begin{tabular}{lp{5.5cm}ll}
+      \toprule
+      Phase       & Description            			& Creates Deliverable                     & Due Date \\
+      \midrule
+      \alert{P}	& Choose a topic          			& Citation graph                 			& \alert{18.10.2022} \\
+  		\alert{I}   & Deep dive \& Concept    			& Identify research questions      & \alert{25.10.2022} \\
+  		\alert{II}  & Refine concept  					& A well structured idea for your paper   & \alert{08.11.2022} \\
+      \alert{III} & Writing  								& Paper draft (review version) 				& \alert{13.12.2022} \\
+      \alert{IV}  & Reviewing \& writing           & Your reviews       							& \alert{20.12.2022} \\
+      \alert{VI}  & Presentation deadline			  	& Presentation ready  							& \alert{30.01.2023} \\
+      \midrule
+      --          & End of Lecture Period   			& Paper camera ready                                   & \alert{11.02.2023} \\
+      \bottomrule
+    \end{tabular}
+    }
+  \end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Goal of this Course}
+
+	We want you to develop your skills as a member of the \alert{scientific community}:
+	\vspace{0.5cm}
+	\begin{itemize}
+		\item Surveying skills (Related Work).
+		\item Ability to conceptualize abstract concepts for yourself.
+		\item Ability to adjust such concepts.
+		\item Ability to present your thoughts to others in clarity.
+	\end{itemize}
+
+	\vspace{1cm}
+	$\Rightarrow$ \textbf{Show us that you posses those skills, by presenting a representative work!}
+\end{frame}
+
+\begin{frame}
+	\frametitle{For Example}
+	Some paper types that would be perfectly suited as demonstrator of your amazing research skills:
+	\vspace{0.5cm}
+	\begin{itemize}
+		\item Simplified representation of existing knowledge (simplify for the next reader).
+		\item Reproduction of an experiment and interpretation of results.
+		\item Creative combinations of existing techniques.
+		\item Systemization of Knowledge and discussion.
+	\end{itemize}
+	\vspace{1cm}
+	\center{
+	\textbf{Your paper does not need to present groundbreaking innovation!}\newline(ofc cool if it does)
+	}
+\end{frame}
+
+% \begin{frame}
+% 	\frametitle{The ``Ampel'' System}
+% 
+% 	\center{\textbf{You are responsible for the quality of your work. We are here to help you!}}
+% 	\vspace{0.5cm}
+% 	\begin{itemize}
+% 		\item We promise you our personal best guidance and support.
+% 		\begin{itemize}
+% 			\item We are experienced in making mistakes ! :-)
+% 		\end{itemize}
+% 		\item After every exercise/personal talk you receive a \textbf{Ampel signal} $\in \{\textcolor{red}{red}, \textcolor{orange}{yellow}, \textcolor{green}{green}\}$.
+% 		\item Our experience: A good grade is \textbf{correlated with but not implied by} green lights. 
+% 		\begin{itemize}
+% 			\item You may get a 1.0 with only red lights (unlikely) or a 5.0 with green lights (even more unlikely)
+% 		\end{itemize}
+% 		\item You may choose at any time whether you receive your signal in confidence or publicly.
+% 	\end{itemize}
+% 
+% \end{frame}
+
+
+\begin{frame}
+  \frametitle{Orga}
+  \begin{itemize}
+	  \item Meeting (about) every \alert{2} weeks in presence. \textbf{The TUM calendar counts!}
+	  \item Regularly: Complete provided exercises, and receive feedback from us and others.
+	  \item We will have at least one round of personal meetings with us and each of you. (When?)
+	  \item Issues?
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+	\frametitle{Help with Literature}
+  \begin{itemize}
+      \item \url{https://scholar.google.com}
+      \item \url{https://semanticscholar.org}
+	  \item \url{https://dblp.uni-trier.de}
+      \item \url{https://arxiv.org}
+      \item Get around paywalls using
+          \url{https://login.eaccess.ub.tum.de/login} or bookmarklet:
+          \begin{lstlisting}
+javascript:void(location.href='https://eaccess.ub.tum.de/login?url='+location.href)
+          \end{lstlisting}
+      \item Researchers' homepages can be \alert{valuable}! (source code, raw data, instructions, technical information, ...)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Buddy System}
+
+	\center{\textbf{``Hey... you wanna be buddys ?''}}
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Next Exercise} 
+	\center{
+		\textbf{Identify points of interests for your paper concept}
+
+		For this we ask you to execute the following iterative process.
+		}
+\end{frame}
+
+\begin{frame}
+		
+		\small
+		\textbf{1. Go through your catalog of papers (\alert{Make notes!}) and ask yourself questions like}
+		\begin{enumerate}[label=(\alph*)]
+			\item{What are remaining research questions, what was hard to understand? \textbf{What annoyed you?} \alert{Provide context to your answers!}}
+			\item{Have those results been reproduced? If not, why not ?}
+			\item{Which works or results should be compared with each other ? What would such a discussion yield?}
+			\item{Why was an attack possible ? Is there an underlying systematic problem? What was affected? What can be done now ?}
+		\end{enumerate}
+
+		\vspace{0.5cm}
+
+		\textbf{2. Try to resolve those questions (e.g.)}
+		\begin{enumerate}[label=(\alph*)]
+			\item{Are there better explanations in other papers ? Has future work already been addressed ?}
+			\item{Are there already reproductions of this aspect ? If so, do you agree with the methodology ?}
+			\item{What comparisons where drawn in other works on this topic?}
+			\item{How did the community react to this attack ? Are there follow up-publications?}
+		\end{enumerate}
+
+		\textbf{3. Repeat on the new material until you are left with a large \alert{collection of unresolved questions.}}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Next Exercise} 
+
+\center{
+\textbf{Be ready to present those possible research questions to the course.}
+		}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{The End (for today)}
+	\begin{center}
+		\Large Questions?
+	\end{center}
+\end{frame}
+
+\end{document}

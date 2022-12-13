@@ -1,0 +1,15 @@
+\frametitle{How to bybass the scientific paywall?}
+
+	\begin{enumerate}
+		\item Use the \alert{bookmarklet} of our university library:
+		\vspace{0.5em}
+		\tiny
+			\begin{verbatim}
+			javascript:void(location.href='https://eaccess.ub.tum.de/login?url='+location.href)
+			\end{verbatim}
+		\normalsize
+		\item Look on the webpage of the authors or their university
+	\end{enumerate}
+	
+	\vspace{1cm}
+	Due to the Covid-19 crisis: ACM Digital Library is open access right now!

@@ -1,0 +1,390 @@
+
+%% see http://latex-beamer.sourceforge.net/
+%% idea contributed by H. Turgut Uyar
+%% template based on a template by Till Tantau
+%% this template is still evolving - it might differ in future releases!
+
+\documentclass[xcolor={usenames,dvipsnames}]{beamer}
+\usepackage{booktabs}
+\usepackage{ragged2e}
+\hypersetup{colorlinks,linkcolor=,urlcolor=}
+
+
+% THEME
+% =========================================================
+%\usetheme{Boadilla}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{normal text}{fg=white,bg=black!90}
+\setbeamercolor{structure}{fg=white}
+\setbeamercolor{item projected}{use=item,fg=white,bg=item.fg!35}
+\setbeamercolor*{palette primary}{use=structure,fg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=structure.fg!95!black,bg=black!80}
+\setbeamercolor*{framesubtitle}{fg=white}
+\setbeamercolor*{block title}{parent=structure,bg=black!60}
+\setbeamercolor*{block body}{fg=black,bg=black!10}
+\setbeamercolor*{block title alerted}{parent=alerted text,bg=black!15}
+\setbeamercolor*{block title example}{parent=example text,bg=black!15}
+
+\setbeamercolor{mybox}{fg=white,bg=GreenYellow}
+%\useinnertheme[shadow]{rounded}
+% =========================================================
+
+% DEFINE COLORS
+% =========================================================
+\definecolor{darkred}{RGB}{223,63,00}
+\definecolor{brightred}{RGB}{255,127,00}
+% =========================================================
+
+% Templates
+% =========================================================
+%\setbeamertemplate{itemize subitem}[triangle]
+% =========================================================
+
+% SET COLORS
+% =========================================================
+\setbeamercolor{normal text}{fg=white,bg=black!90}
+\setbeamercolor{structure}{fg=white}
+\setbeamercolor{item projected}{use=item,fg=white,bg=item.fg!35}
+\setbeamercolor*{palette primary}{use=structure,fg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=structure.fg!95!black,bg=black!80}
+\setbeamercolor*{framesubtitle}{fg=white}
+\setbeamercolor*{block title}{parent=structure,bg=black!60}
+\setbeamercolor*{block body}{fg=black,bg=black!10}
+\setbeamercolor*{block title alerted}{parent=alerted text,bg=black!15}
+\setbeamercolor*{block title example}{parent=example text,bg=black!15}
+% =========================================================
+
+
+% FONTS
+% =========================================================
+\setbeamerfont{alerted text}{series=\bfseries}
+% =========================================================
+
+
+% PACKAGES
+% =========================================================
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{DejaVuSansMono}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+% =========================================================
+
+% METADATA
+% =========================================================
+\title[ODMWS WS~22]{ODMWS --- WS 2022}
+
+\subtitle{Seminar}
+
+\author[M. Tschirschnitz]
+{
+	Maximilian Tschirschnitz
+}
+
+\institute[Chair I20, TUM]
+{
+	Lehrstuhl f\"ur Sicherheit in der Informatik / I20 \\
+	Prof.\ Dr.\ Claudia Eckert\\
+	Technische Universität München
+}
+
+\date{\today}
+% =========================================================
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+%\AtBeginSubsection[]
+%{
+%\begin{frame}<beamer>
+%\frametitle{Outline}
+%\tableofcontents[currentsection,currentsubsection]
+%\end{frame}
+%}
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command:
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+	\frametitle{Review - Structure}
+
+			\begin{enumerate}
+				\item Summary
+				\item Strength
+				\item Weakness
+				\item Comments
+			\end{enumerate}
+
+			\vspace{1cm}
+
+			\begin{itemize}
+				\item<2> \emph{\alert{$\sim$ About one page}}
+			\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Summary}
+
+	\begin{columns}
+		\begin{column}{0.5\linewidth}
+			\begin{itemize}
+				\item \alert{Shortly} summarize the contents
+				\item What is the topic?
+				\item What is new about it?
+				\item Which new approaches were developped?
+				\item \emph{$\sim$ About one paragraph}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.49\linewidth}
+			\tiny
+			\justifying
+			The paper introduces an alternative to the traditional Unix ptrace
+			facility and an implementation of this alternative as a Linux loadable
+			kernel module and a GDB server interfacing to the module.  The
+			alternative, called plutonium-dbg, is meant to address some shortcomings
+			of ptrace, but ends up having its own different shortcomings, which the
+			paper acknowledges and discusses.
+
+			Overall, this is a fine topic for research, a practically usable
+			implementation, and a decent paper.  There's no reason not to accept
+			this paper.
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Why Do I Have to Summerize the Paper?}
+
+	\begin{itemize}
+		\item Helps you understand the paper
+		\item Shows the author that you understood the paper
+		\item \alert{Or that you did not!}
+		\item May show the reason for good or bad feedback
+		\item Helps to detect what is unclear
+		\item Shows the perspective of the reader
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Strength}
+
+	\begin{columns}
+		\begin{column}{0.5\linewidth}
+			\begin{itemize}
+				\item Highlight the strength of the paper
+				\item What did you like?
+				\item Content related
+				\item Focus on outstanding points
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.49\linewidth}
+			\tiny
+			Strengths:
+
+			+ The paper is well written and easy to follow and the authors guide the
+			reader through the different challenges
+
+			+ They address an important problem and they provide a solution. We as a
+			community lack of specific tools for reversing on Linux compared to all
+			the available programs for Windows
+
+			+ This solution is released on Github
+
+			+ They provide a really nice summary of all the known techniques to
+			detect a debugger on Linux. This is the most completed list I know
+
+			+ The tool is compatible with the GDB protocol
+
+			+ Nice use of the kprobes and uprobes for addressing all the technical
+			challenges
+
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Weakness}
+
+	\begin{columns}
+		\begin{column}{0.5\linewidth}
+			\begin{itemize}
+				\item Highlight the Weakness of the paper
+				\item What did you dislike?
+				\item Content related
+				\item \alert{Focus on issues that teach the author something}
+				\item Do \textbf{not} list spelling or grammar errors
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.49\linewidth}
+			\tiny
+			Weaknesses:
+
+			- The tool supports only x86\_64 binaries
+
+			- They insist plutonium-dbg is important for malware analysis but as
+			Cozzi et al.[1] pointed out x86\_64 is not the most common architecture
+			for Linux malware.
+
+			- Maybe there are other instructions or events that as a side effect
+			push on the stack RFLAGS so the solution proposed for the pushf is not solid
+
+			- The authors do not discuss at all how common are the mentioned evasive
+			tricks. Table XIII of [1] gives an idea.
+
+			- The evaluation part does not mention which binaries were used for the
+			experiments. Real malware samples? Quick pocs? Please specify.
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Comments}
+
+	\begin{columns}
+		\begin{column}{0.5\linewidth}
+			\begin{itemize}
+				\item Text-related comments
+				\item Target to improve the document
+				\item Specific suggestions for improvement
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.49\linewidth}
+			\tiny
+			Comments:
+
+			After headline of 1 and 3: A short introduction to the chapter would
+			be good.
+
+			In 1.3: The groups should be mentioned. No detailed explanation needed, a short
+			enumeration is enough.
+
+			In 2: A brief overview about the content of LO! and CONFUSE would help. It is
+			unclear how exactly they are related to this paper and what their results are.
+
+			In 4.2: "Opaque Predicates are boolean functions that always return a fixed
+			value regardless of their input." Example of missing citation mentioned above.
+			Who introduces opaque predicates? Where is this definition taken from?
+
+			In 5.2: "This is a FunctionPass." It is unclear what is referred to by "this"
+
+			In 5.3: Typo at "after the second variable and insert the perdicate".
+			"perdicate" should be changed to "predicate".
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Your Task}
+
+	\begin{itemize}
+		\item \alert{Carefully} read through the two papers we provide you with
+		\item Write reviews for both (about one page each)
+		\item Hand in until \alert{Dec, 20th} latest!
+		\item Improve your draft based on reviews you receive afterwards
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Don't be shy}
+	\begin{itemize}
+		\item We do not tell you who is the author (you might know)
+		\item We do not tell the author who has written the review
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Writing an Abstract}
+	\framesubtitle{Content}
+
+	Your Abstract is a short version of your paper.
+	It should reflect all core ideas and results.
+
+	\medskip
+			\begin{itemize}
+				\item Motivation/Problem (2 - 3 sentences)
+
+					How is your problem/solution relevant. What is the problem?
+				\item Solution/Analysis Approach (second largest part)
+
+					Which approach/technique was used to address this problem.
+				\item Results
+
+					Most important part.
+				\item Conclusion
+
+					What follows from your results/consequences?
+			\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Writing an Abstract}
+	\framesubtitle{Style}
+
+	\begin{itemize}
+		\item Easy to comprehend/follow for a broad audience.
+		\item Closed in itself and self-explaining.
+		\item Be honest and present limitations and problems truthfully.
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Writing an Abstract}
+	\framesubtitle{Format}
+
+	\begin{itemize}
+		\item Between 150 and 200 words.
+		\item No citations/references (usually).
+		\item Concrete language (avoid words like `mostly', `relatively', etc.).
+		\item Only content from your work.
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Writing an Abstract}
+	\framesubtitle{Not an Introduction}
+
+	\begin{itemize}
+		\item Covers the whole paper.
+		\item Introduction leads towards the remainder of the work.
+		\item Introduction can be a bit more `scenic'.
+		\item Abstract needs to get your point delivered in a snap (advertisement).
+	\end{itemize}
+
+	Further Reading:
+	\begin{itemize}
+		\item \url{https://users.ece.cmu.edu/~koopman/essays/abstract.html}
+		\item \url{http://www.adelaide.edu.au/writingcentre/learning_guides/learningGuide_writingAnAbstract.pdf}
+		\item \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3136027/}
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Questions?}
+\end{frame}
+\end{document}
