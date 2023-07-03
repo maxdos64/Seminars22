@@ -1,0 +1,215 @@
+
+%% see http://latex-beamer.sourceforge.net/
+%% idea contributed by H. Turgut Uyar
+%% template based on a template by Till Tantau
+%% this template is still evolving - it might differ in future releases!
+
+\documentclass[xcolor={usenames,dvipsnames}]{beamer}
+\usepackage{booktabs}
+
+
+% THEME
+% =========================================================
+%\usetheme{Boadilla}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{normal text}{fg=white,bg=black!90}
+\setbeamercolor{structure}{fg=white}
+\setbeamercolor{item projected}{use=item,fg=white,bg=item.fg!35}
+\setbeamercolor*{palette primary}{use=structure,fg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=structure.fg!95!black,bg=black!80}
+\setbeamercolor*{framesubtitle}{fg=white}
+\setbeamercolor*{block title}{parent=structure,bg=black!60}
+\setbeamercolor*{block body}{fg=black,bg=black!10}
+\setbeamercolor*{block title alerted}{parent=alerted text,bg=black!15}
+\setbeamercolor*{block title example}{parent=example text,bg=black!15}
+%\useinnertheme[shadow]{rounded}
+% =========================================================
+
+% DEFINE COLORS
+% =========================================================
+\definecolor{darkred}{RGB}{223,63,00}
+\definecolor{brightred}{RGB}{255,127,00}
+% =========================================================
+
+% Templates
+% =========================================================
+%\setbeamertemplate{itemize subitem}[triangle]
+% =========================================================
+
+% SET COLORS
+% =========================================================
+\setbeamercolor{normal text}{fg=white,bg=black!90}
+\setbeamercolor{structure}{fg=white}
+\setbeamercolor{item projected}{use=item,fg=white,bg=item.fg!35}
+\setbeamercolor*{palette primary}{use=structure,fg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=structure.fg!95!black,bg=black!80}
+\setbeamercolor*{framesubtitle}{fg=white}
+\setbeamercolor*{block title}{parent=structure,bg=black!60}
+\setbeamercolor*{block body}{fg=black,bg=black!10}
+\setbeamercolor*{block title alerted}{parent=alerted text,bg=black!15}
+\setbeamercolor*{block title example}{parent=example text,bg=black!15}
+% =========================================================
+
+
+% FONTS
+% =========================================================
+\setbeamerfont{alerted text}{series=\bfseries}
+% =========================================================
+
+
+% PACKAGES
+% =========================================================
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{DejaVuSansMono}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+% =========================================================
+
+% METADATA
+% =========================================================
+\title{Concepts of Trust Establishment\\ WS 2023/24}
+
+\subtitle{Seminar}
+
+\author[M. Tschirschnitz]
+{
+	Maximilian von Tschirschnitz
+}
+
+\institute[Chair I20, TUM]
+{
+	Lehrstuhl f\"ur Sicherheit in der Informatik / I20 \\
+	Prof.\ Dr.\ Claudia Eckert\\
+	Technische Universität München
+}
+
+\date{\today}
+% =========================================================
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}
+	\frametitle{What is this seminar about?}
+
+	Grasping the concepts of Trust and how we can establish it (autonomously).
+	\hfill
+	\begin{itemize}
+		\item What does the relation of Trust actually mean?
+		\item What established/novel concepts of Trust Establishment are available ?
+		\item What Axioms can we choose from to rely upon ? 
+	\end{itemize}
+\end{frame}
+
+%
+\begin{frame}[label=process]
+	\frametitle{Process}
+	\begin{itemize}
+		\item Phase \alert{I}: Select a \alert{topic}
+		\item Phase \alert{II}: Find \alert{literature}
+		\item Phase \alert{III}: Do your \alert{reading / experiments / programming}
+		\item Phase \alert{IV}: \alert{Writing} phase I
+		\item Phase \alert{V}: \alert{Peer review}
+		\item Phase \alert{VI}: \alert{Writing} phase II
+		\item Phase \alert{VII}: Final \alert{talks}
+	\end{itemize}
+	Exact schedule will be published once list of participants is known.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Phase \alert{I}}
+	\begin{enumerate}
+		\item I will provide you with a list of starting points for topics that are of interest for this seminar
+		\item You will \alert{choose / propose} your topic and thereby either:
+			\begin{itemize}
+				\item Model, analyse or compare some existing definitions of, and approaches to Trust.
+				\item Conduct a critical analysis of an existing Trust establishment method
+				\item Elaborate on novel (cryptographic) approaches (e.g. Homomorphic Time Lock Puzzles)
+				\item Categorize existing Trust exablishment methods 
+				\item Elaborate on concepts of tracking/trusting origin
+			\end{itemize}
+		\item In all cases, you will put your work into context of exisiting literature
+			\begin{itemize}
+				\item e.g at Usenix Security Symposium, S\&P, ACM CCS, NDSS
+			\end{itemize}
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Our Topics of Interest}
+	\begin{itemize}
+		\item Proximity as Trust Factor
+		\item Trustmanagement in Groups/Teams
+		\item Survey on Trust establishment in Ad hoc networks
+		\item Game Theory applied to Ad Hoc networks
+		\item Integrity Codes / Tamper Evident Pairing
+		\item Differentiation of available `Web of Trust'/PKI Concepts
+		\item Comparison of formal verification approaches
+		\item Homomorphic Time Lock Puzzles
+		\item Provenance and Dependency Analysis in relation to Authenticity
+		\item Password Authenticated Key agreement and Zero Knowledge Proofs
+		\item \alert{Or:} Provide me with your own topic proposal and I will consider it
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Registration}
+	\begin{itemize}
+		\item Registration using the \alert{matching system}
+	  	\item Letter of motivation gets preference
+	\end{itemize}
+\end{frame}
+
+\begin{frame}<1>[label=timeplace]
+	\frametitle{Time and Place}
+	\begin{center}
+		\begin{tabular}{ll}
+		        \textbf{When?}  & I pick the slot\\
+		        						&\textcircled{1} for Bi-Weekly Meetings during the Semester\\
+		        						&\textcircled{1} with the least collisions\\
+		        						&\textcircled{2} Physical attendance mandatory!\\
+					&\\
+					& Talks at the \alert{end} of the semester \\
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\againframe<2->{timeplace}
+
+\begin{frame}
+\frametitle{Grading}
+  \begin{tabular}{lrl}
+             & \alert{40 \%}   & Final Paper (Content, Style, Language, Scope, \ldots)\\
+	     		 & \alert{10 \%}   & Practical application (depends on topic)  \\
+             & \alert{10 \%}   & Review      \\
+             & \alert{30 \%}   & Presentation (Content, Style, Timeliness, \ldots) \\
+             & \alert{10 \%}   & Discussion                                                   \\
+    \midrule
+	$\Sigma$ & \alert{100 \%}  & Total                                                        \\
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		{\huge Questions?}
+
+		\vspace{2cm}
+
+		\begin{center}
+			Contact me at \\ \texttt{tschirschnitz@sec.in.tum.de}
+		\end{center}
+
+		\vspace{1cm}
+	\end{center}
+\end{frame}
+
+
+\end{document}
